@@ -49,23 +49,23 @@ CREATE TABLE Enrollments (
 -- Insert Teachers
 INSERT INTO Teachers (first_name, last_name, email, department)
 VALUES
-('John', 'Smith', 'jsmith@school.com', 'Mathematics'),
-('Sarah', 'Johnson', 'sjohnson@school.com', 'Computer Science'),
-('David', 'Brown', 'dbrown@school.com', 'Physics');
+('faruk', 'omoope', 'omoope@school.com', 'Mathematics'),
+('gboolahan, 'owode', 'gbolahan@school.com', 'Chemistry'),
+('Olamilekan', 'Wasiu', 'Lekan@school.com', 'ICT');
 
 -- Insert Students
 INSERT INTO Students (first_name, last_name, email, date_of_birth, gender)
 VALUES
-('Alice', 'Walker', 'alice.walker@email.com', '2006-05-15', 'Female'),
-('Michael', 'Green', 'michael.green@email.com', '2005-11-02', 'Male'),
+('Opeyemi', 'joy', 'opeyemi.joy@email.com', '2000-05-15', 'male'),
+('john', 'mathew', 'john.mathew@email.com', '2005-11-02', 'Male'),
 ('Sophia', 'Taylor', 'sophia.taylor@email.com', '2007-01-20', 'Female');
 
 -- Insert Courses
 INSERT INTO Courses (course_name, credits, teacher_id)
 VALUES
 ('Algebra 101', 3, 1),
-('Introduction to Programming', 4, 2),
-('Physics Fundamentals', 3, 3);
+('Introduction to chemistry', 4, 2),
+('Introduction to software engineering', 3, 3);
 
 
 use studentrecordsdb;
@@ -73,11 +73,12 @@ use studentrecordsdb;
 -- Insert Enrollments
 INSERT INTO Enrollments (student_id, course_id)
 VALUES
-(1, 1), -- Alice → Algebra
-(1, 2), -- Alice → Programming
-(2, 3), -- Michael → Physics
+(1, 1), -- Opeyemi → Algebra
+(1, 2), -- John → Software engineering
+(2, 3), -- Opeyemi → Physics
 (3, 2); -- Sophia → Programming
 SELECT * FROM Students;
 SELECT * FROM Teachers;
 SELECT * FROM Courses;
+
 SELECT * FROM Enrollments;
